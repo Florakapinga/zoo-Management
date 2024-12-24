@@ -9,3 +9,8 @@ public:
     {
         std::cout << "Name: " << name << ", Species: " << species << std::endl;
     }
+
+protected:
+    std::string name;
+    std::string species;
+};
