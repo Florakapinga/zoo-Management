@@ -57,3 +57,14 @@ public:
 private:
     std::vector<Animal *> animals;
 };
+int main()
+{
+    Zoo zoo;
+    zoo.addAnimal(new Lion("Simba"));
+    zoo.addAnimal(new Elephant("Dumbo"));
+
+    std::cout << "Animals in the Zoo:" << std::endl;
+    zoo.displayAnimals();
+
+    return 0;
+}
