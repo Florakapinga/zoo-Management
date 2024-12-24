@@ -39,3 +39,10 @@ public:
     {
         animals.push_back(animal);
     }
+    void displayAnimals()
+    {
+        for (auto animal : animals)
+        {
+            animal->displayInfo();
+        }
+    }
