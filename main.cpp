@@ -23,3 +23,8 @@ public:
         std::cout << "Lion - " << name << std::endl;
     }
 };
+class Elephant : public Animal
+{
+public:
+    Elephant(std::string name) : Animal(name, "Elephant") {}
+    void displayInfo() override
