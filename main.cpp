@@ -32,3 +32,10 @@ public:
         std::cout << "Elephant - " << name << std::endl;
     }
 };
+class Zoo
+{
+public:
+    void addAnimal(Animal *animal)
+    {
+        animals.push_back(animal);
+    }
