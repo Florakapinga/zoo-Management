@@ -14,3 +14,8 @@ protected:
     std::string name;
     std::string species;
 };
+class Lion : public Animal
+{
+public:
+    Lion(std::string name) : Animal(name, "Lion") {}
+    void displayInfo() override
