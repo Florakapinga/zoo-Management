@@ -46,3 +46,14 @@ public:
             animal->displayInfo();
         }
     }
+    ~Zoo()
+    {
+        for (auto animal : animals)
+        {
+            delete animal;
+        }
+    }
+
+private:
+    std::vector<Animal *> animals;
+};
